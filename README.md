@@ -1,6 +1,5 @@
-# openblock-blocks
+# blockgpt-blocks
 
-[![Publish Npm Package](https://github.com/openblockcc/openblock-blocks/actions/workflows/publish-npm-package.yml/badge.svg)](https://github.com/openblockcc/openblock-blocks/actions/workflows/publish-npm-package.yml) ![](https://img.shields.io/github/license/openblockcc/openblock-blocks)
 
 ## Instructions
 
