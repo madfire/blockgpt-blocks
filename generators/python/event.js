@@ -22,6 +22,12 @@ goog.provide('Blockly.Python.event');
 
 goog.require('Blockly.Python');
 
+Blockly.Python['event_whenmicropythonbegin'] = function(block) {
+  var code = "";
+  var nextBlock = block.nextConnection && block.nextConnection.targetBlock();
+
+  return code;
+};
 
 Blockly.Python['event_whenmicrobitbegin'] = function(block) {
   Blockly.Python.imports_["microbit"] = "from microbit import *";
