@@ -1,15 +1,34 @@
-# blockgpt-blocks
+# BlockGPT Blocks
 
+BlockGPT Blocks contains the block definitions, toolbox behavior, and code generators used by the BlockGPT graphical programming experience.
 
-## Instructions
-make sure you dont set proxy, or you get stuck
-```
+## Responsibilities
+
+- Scratch / Blockly style block definitions
+- generator logic for supported targets
+- hardware-related blocks
+- custom blocks introduced by BlockGPT features
+
+## Local development
+
+```bash
 npm install
 npm link
 ```
 
-## Attention
+If you modify this repository, run:
 
-If you modified this project, you have to run `npm run prepublish`  and restart openblock-gui. (After modifying the blocks code the webpack-dev-server won't rebuild the openblock-gui automaticly.)
+```bash
+npm run prepublish
+```
 
-if you come across net problem .npmrc change to https://registry.npmmirror.com
+Then restart BlockGPT GUI so the updated block package is reloaded.
+
+## Notes
+
+- Avoid problematic proxy settings during install if package resolution stalls.
+- If you run into registry issues, using a mirror such as `https://registry.npmmirror.com` can help.
+
+## Product role
+
+This repository is where BlockGPT's visual programming language is defined. It directly supports the project goal of helping learners understand AI and programming through editable graphical blocks.
