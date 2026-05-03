@@ -25,6 +25,28 @@ goog.provide('Blockly.Blocks.stdint');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.Colours');
 
+Blockly.Blocks['math_int4_number'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_slider",
+          "name": "NUM",
+          "value": "0",
+          "precision": 1,
+          "min": "-15",
+          "max": "15"
+        }
+      ],
+      "output": "Number",
+      "outputShape": Blockly.OUTPUT_SHAPE_ROUND,
+      "colour": Blockly.Colours.textField,
+      "colourSecondary": Blockly.Colours.textField,
+      "colourTertiary": Blockly.Colours.textField
+    });
+  }
+};
 
 Blockly.Blocks['math_int8_number'] = {
   init: function() {
